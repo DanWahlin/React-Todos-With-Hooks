@@ -1,5 +1,5 @@
 {
-  "name": "to-dos",
+  "name": "todos-with-hooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
