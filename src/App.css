@@ -39,3 +39,8 @@
   background-color: rgb(126, 126, 126);
   color: #fff;
 }
+
+.theme-switcher {
+  margin-left: 3px;
+  margin-bottom: 10px;
+}

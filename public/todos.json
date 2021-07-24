@@ -1,0 +1,14 @@
+[
+    {
+      "text": "Learn about React Hooks",
+      "isCompleted": false
+    },
+    {
+        "text": "Meet with friend",
+      "isCompleted": false
+    },
+    {
+      "text": "Build todo app",
+      "isCompleted": false
+    }
+  ]

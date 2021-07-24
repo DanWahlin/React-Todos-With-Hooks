@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from 'react';
 
 function TodoForm({ addTodo }) {
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState('');
     const inputRef = useRef();
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function TodoForm({ addTodo }) {
         e.preventDefault();
         if (!value) return;
         addTodo(value);
-        setValue("");
+        setValue('');
     };
 
     return (

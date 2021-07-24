@@ -4,7 +4,6 @@ function Header() {
     return (
       <header>
         <ThemeSwitcher />
-        <br /><br />
       </header>
     );
 }

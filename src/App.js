@@ -1,27 +1,20 @@
-import React, { useState } from "react";
-import ThemeContext from "./Theme/ThemeContext";
-import Header from "./Header";
-import Todo from "./Todos/Todo";
-import TodoForm from "./Todos/TodoForm";
-import "./App.css";
+import React, { useEffect, useState } from 'react';
+import ThemeContext from './Theme/ThemeContext';
+import Header from './Header';
+import useTodosData from './Todos/useTodosData';
+import Todo from './Todos/Todo';
+import TodoForm from './Todos/TodoForm';
+import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState('light');
   const value = { theme, setTheme };
-  const [todos, setTodos] = useState([
-    {
-      text: "Learn about React Hooks",
-      isCompleted: false
-    },
-    {
-      text: "Meet with friend",
-      isCompleted: false
-    },
-    {
-      text: "Build todo app",
-      isCompleted: false
-    }
-  ]);
+  const initialTodos = useTodosData();
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    setTodos(initialTodos);
+  }, [initialTodos]);
 
   const addTodo = text => {
     const newTodos = [...todos, { text }];
@@ -44,7 +37,7 @@ function App() {
     <div className={`app ${theme}-bg`}>
       <ThemeContext.Provider value={value}>
         <Header />
-        <div className="todo-list">
+        <div className='todo-list'>
           {todos.map((todo, index) => (
             <Todo
               key={index}

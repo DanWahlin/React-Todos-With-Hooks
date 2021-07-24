@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import ThemeContext from "../Theme/ThemeContext";
+import { useContext } from 'react';
+import ThemeContext from '../Theme/ThemeContext';
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
   const { theme } = useContext(ThemeContext);
@@ -7,7 +7,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
     return (
       <div
         className={`todo ${theme}-todo-bg`}
-        style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+        style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
       >
         {todo.text}    
         <div>
