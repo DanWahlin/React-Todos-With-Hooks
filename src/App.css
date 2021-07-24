@@ -19,3 +19,23 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.light-bg {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-bg {
+  background-color: #000;
+  color: #fff;
+}
+
+.light-todo-bg {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-todo-bg {
+  background-color: rgb(126, 126, 126);
+  color: #fff;
+}
