@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ThemeContext from './Theme/ThemeContext';
+import ThemeContext from './theme/ThemeContext';
 import Header from './Header';
-import useTodosData from './Todos/useTodosData';
-import Todo from './Todos/Todo';
-import TodoForm from './Todos/TodoForm';
+import useTodosData from './todos/useTodosData';
+import Todo from './todos/Todo';
+import TodoForm from './todos/TodoForm';
 import './App.css';
 
 function App() {
