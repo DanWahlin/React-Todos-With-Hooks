@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import ThemeContext from '../Theme/ThemeContext';
+import ThemeContext from '../theme/ThemeContext';
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
   const { theme } = useContext(ThemeContext);
