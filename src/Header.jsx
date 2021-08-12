@@ -1,3 +1,4 @@
+import React from 'react';
 import ThemeSwitcher from './theme/ThemeSwitcher';
 
 function Header() {
